@@ -1,0 +1,32 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: space-between;
+    width: calc(3*(100% - 120px)/7);
+
+    &__category {
+        width: 100%;
+        color: #ff643d;
+    }
+
+    &__name {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    &__description {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    &__purchase {
+        width: calc(100% / 3);
+        vertical-align: top;
+    }
+}
+
+

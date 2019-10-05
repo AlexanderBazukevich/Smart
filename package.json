@@ -1,0 +1,27 @@
+{
+  "name": "smart",
+  "version": "1.0.0",
+  "description": "Second project",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc src/styles.less dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderBazukevich/Smart.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "less"
+  ],
+  "author": "Alexander Bazukevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderBazukevich/Smart/issues"
+  },
+  "homepage": "https://github.com/AlexanderBazukevich/Smart#readme",
+  "devDependencies": {
+    "less": "^3.10.3"
+  }
+}
