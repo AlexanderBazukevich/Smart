@@ -1,5 +1,5 @@
 .panel {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-between;
@@ -14,19 +14,20 @@
         background-position: center center;
         background-repeat: no-repeat;
 
-        &_menu_icon {
-            background-image: url(../assets/interface/menu.png);
+        &_icon {
+            &_menu {
+                background-image: url(../assets/interface/menu.png);
+            }
+            &_more {
+                background-image: url(../assets/interface/more.png);
+            }
+            &_box {
+                background-image: url(../assets/interface/box.png);
+            }
+            &_bag {
+                background-image: url(../assets/interface/bag.png);
+            }
         }
-        &_more_icon {
-            background-image: url(../assets/interface/more.png);
-        }
-        &_box_icon {
-            background-image: url(../assets/interface/box.png);
-        }
-        &_bag_icon {
-            background-image: url(../assets/interface/bag.png);
-        }
-
     }
 
     &__slider {
@@ -34,6 +35,3 @@
         background-color: black;
     }
 }
-
-
-
