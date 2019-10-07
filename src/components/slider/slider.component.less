@@ -1,0 +1,35 @@
+.slider {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-50%);
+
+    &__title {
+        color: white;
+        transform: rotate(90deg);
+    }
+
+    &__arrow {
+        height: 19px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        &_forward {
+            background-image: url(../assets/interface/forward.png);
+        }
+
+        &_backward{
+            background-image: url(../assets/interface/backward.png);
+        }
+    }
+
+    &__counter {
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+}

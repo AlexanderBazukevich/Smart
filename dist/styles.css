@@ -1,0 +1,228 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Raleway;
+  margin: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.pusher {
+  display: block;
+  font-size: 0;
+}
+.pusher_side_left {
+  margin-left: auto;
+}
+.layout {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+.layout_center {
+  width: 100%;
+  max-width: calc(100% - 2*60px);
+}
+.header {
+  display: flex;
+  margin-top: 30px;
+}
+.logo__text {
+  font-size: 20px;
+}
+.logo__text_color_black {
+  color: black;
+}
+.logo__text_color_red {
+  color: #fb897c;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.menu__item {
+  position: relative;
+  max-width: calc(100%/7);
+  width: 100%;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.menu__text {
+  color: #818181;
+  vertical-align: middle;
+}
+.menu__text_uppercase {
+  text-transform: uppercase;
+}
+.menu__text:before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 1.3em;
+  background-color: #818181;
+}
+.menu__text:hover:before {
+  background-color: #ff724e;
+}
+.menu__icon {
+  margin-right: 20px;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.icon_search {
+  background-image: url(../assets/interface/search.png);
+}
+.icon_user {
+  background-image: url(../assets/interface/user.png);
+}
+.panel {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  height: 100%;
+  width: 60px;
+  padding: 30px 0;
+}
+.panel__item {
+  display: block;
+  height: 35px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.panel__item_icon_menu {
+  background-image: url(../assets/interface/menu.png);
+}
+.panel__item_icon_more {
+  background-image: url(../assets/interface/more.png);
+}
+.panel__item_icon_box {
+  background-image: url(../assets/interface/box.png);
+}
+.panel__item_icon_bag {
+  background-image: url(../assets/interface/bag.png);
+}
+.panel__slider {
+  height: 50%;
+  background-color: black;
+}
+.section {
+  display: flex;
+}
+.section__image {
+  width: calc(3 * 100% / 7);
+  text-align: center;
+}
+.section__product {
+  width: calc(3 * 100% / 7);
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  justify-content: space-between;
+  width: calc(3 * 100% / 7);
+}
+.product__category {
+  width: 100%;
+  color: #ff643d;
+}
+.product__name {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+.product__description {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.product__purchase {
+  width: calc(100% / 3);
+  vertical-align: top;
+}
+.purchase {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.purchase__price {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.purchase__price_small {
+  vertical-align: top;
+  font-size: 20px;
+}
+.purchase__button {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ff4616;
+}
+.slider {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.slider__title {
+  color: white;
+  transform: rotate(90deg);
+}
+.slider__arrow {
+  height: 19px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.slider__arrow_forward {
+  background-image: url(../assets/interface/forward.png);
+}
+.slider__arrow_backward {
+  background-image: url(../assets/interface/backward.png);
+}
+.slider__counter {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  margin-bottom: 30px;
+}
+.socials {
+  transform: translateX(-50%);
+}
+.socials__facebook,
+.socials__instagram {
+  color: #818181;
+  font-size: 13px;
+  font-weight: 700;
+}

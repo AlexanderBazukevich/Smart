@@ -1,0 +1,37 @@
+.panel {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    height: 100%;
+    width: 60px;
+    padding: 30px 0;
+
+    &__item {
+        display: block;
+        height: 35px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        &_icon {
+            &_menu {
+                background-image: url(../assets/interface/menu.png);
+            }
+            &_more {
+                background-image: url(../assets/interface/more.png);
+            }
+            &_box {
+                background-image: url(../assets/interface/box.png);
+            }
+            &_bag {
+                background-image: url(../assets/interface/bag.png);
+            }
+        }
+    }
+
+    &__slider {
+        height: 50%;
+        background-color: black;
+    }
+}
