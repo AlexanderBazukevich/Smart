@@ -1,15 +1,26 @@
 .slider {
     display: flex;
     flex-flow: row wrap;
-    align-content: space-around;
+    align-content: space-evenly;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    transform: translateY(-50%);
 
     &__title {
+        position: relative;
+        margin-bottom: 90px;
         color: white;
-        transform: rotate(90deg);
+        writing-mode: vertical-rl;
+
+        &:after {
+            position: absolute;
+            left: 50%;
+            top: calc(100% + 20px);
+            content: "";
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: white;
+        }
     }
 
     &__arrow {

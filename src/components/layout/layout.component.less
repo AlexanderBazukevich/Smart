@@ -1,11 +1,12 @@
 .layout {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
     height: 100%;
 
-    &_center {
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
-        max-width: calc(100% - 2*@panel-width);
+        padding: 35px 0;
     }
 }

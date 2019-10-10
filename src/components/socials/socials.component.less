@@ -1,10 +1,25 @@
 .socials {
-    transform: translateX(-50%);
+    display: flex;
 
-    &__facebook,
-    &__instagram {
+    @media (min-width: 1050px) {
+        transform: translateX(-50%);
+    }
+
+    &__item {
         color: #818181;
         font-size: 13px;
         font-weight: 700;
+
+        &:nth-child(n + 2) {
+            padding-left: 20px;
+        }
+
+        &_facebook {
+
+        }
+
+        &_instagram {
+
+        }
     }
 }
